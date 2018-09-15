@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".third">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Registration"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#3b9b94"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="132dp"
+        android:text="First Name:"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:textCursorDrawable="@null"
+
+        />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/n2"
+        android:layout_alignStart="@+id/fname"
+        android:text="Last Name:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/fname" />
+
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/n1"
+        android:layout_below="@+id/n1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_alignLeft="@+id/n1"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/mail2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignStart="@+id/fname"
+        android:text="E-mail:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/fname" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/n1"
+        android:layout_below="@+id/n2"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:layout_alignLeft="@+id/n1"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/pass2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/fname"
+        android:layout_marginBottom="245dp"
+        android:text="Password:"
+        android:textSize="18sp"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/fname"
+        android:layout_marginBottom="160dp"
+        android:text="Phone Num:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/fname" />
+
+    <EditText
+        android:id="@+id/past"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pass2"
+        android:layout_alignStart="@+id/n1"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignLeft="@+id/n1"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignStart="@+id/n1"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_alignLeft="@+id/n1"
+        android:textCursorDrawable="@null" />
+
+    <CheckBox
+        android:id="@+id/use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/govt"
+        android:layout_marginStart="40dp"
+        android:text="User"
+        tools:ignore="RtlCompat,UnknownId" />
+
+    <CheckBox
+        android:id="@+id/lawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:text="Lawyer"
+        tools:ignore="RtlCompat,UnknownId" />
+
+    <CheckBox
+        android:id="@+id/govt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lawyer"
+        android:layout_marginBottom="96dp"
+        android:text="Govt.org"
+        tools:ignore="RtlCompat" />
+
+    <CheckBox
+        android:id="@+id/ngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/use"
+        android:layout_alignTop="@+id/lawyer"
+        android:text="NGO"
+        tools:ignore="RtlCompat,UnknownId" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="11dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="#3b9b94"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>
