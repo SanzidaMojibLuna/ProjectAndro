@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,14 +24,17 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.regex.Pattern;
 
 public class third extends AppCompatActivity  {
-    public EditText mailadd,pas,fn,ln,phn;
-    public CheckBox box1,box2,box3,box4;
+    private EditText mailadd,pas,fn,ln,phn;
+    private RadioGroup rad;
+    private RadioButton typebtn;
+
     public Button sub;
     private DatabaseReference refDatabase;
     private FirebaseAuth mAuth;
     private ProgressDialog prog;
-    private String fname,lname,femail,fpass,fphn;
+    private String fname,lname,femail,fpass,fphn,type;
     private StudentInfo student;
+    private int selectid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +47,7 @@ public class third extends AppCompatActivity  {
         ln = (EditText) findViewById(R.id.n2);
         phn = (EditText) findViewById(R.id.num);
 
-        box1 = (CheckBox)findViewById(R.id.use);
-        box2 = (CheckBox)findViewById(R.id.lawyer);
-        box3 = (CheckBox)findViewById(R.id.ngo);
-        box4 = (CheckBox)findViewById(R.id.govt);
+        rad = (RadioGroup)findViewById(R.id.radioid);
 
         sub = (Button)findViewById(R.id.submit);
        // sub.setOnClickListener(this);
@@ -70,10 +72,14 @@ public class third extends AppCompatActivity  {
         femail=mailadd.getText().toString();
         fpass=pas.getText().toString();
         fphn=phn.getText().toString();
+        selectid=rad.getCheckedRadioButtonId();
+        typebtn=(RadioButton)findViewById(selectid);
+        type=typebtn.getText().toString();
+        Toast.makeText(third.this,"This is"+type,Toast.LENGTH_SHORT).show();
 
     }
     void createStudent(){
-        student = new StudentInfo(fname,lname,femail,fpass,fphn);
+        student = new StudentInfo(fname,lname,femail,fpass,fphn,type);
     }
     void createAccountAndSaveInfo(){
        // prog.setMessage("Please wait!!");

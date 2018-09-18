@@ -26,11 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="123dp"
         android:text="First Name:"
         android:textSize="18sp"
-        android:layout_alignParentLeft="true"
         tools:ignore="RtlCompat" />
 
     <EditText
@@ -97,9 +96,8 @@
         android:id="@+id/pass2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/fname"
-        android:layout_marginBottom="245dp"
+        android:layout_centerVertical="true"
         android:text="Password:"
         android:textSize="18sp"
         tools:ignore="RtlCompat" />
@@ -111,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/fname"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="215dp"
         android:text="Phone Num:"
         android:textSize="18sp"
         android:layout_alignLeft="@+id/fname" />
@@ -138,43 +136,6 @@
         android:layout_alignLeft="@+id/n1"
         android:textCursorDrawable="@null" />
 
-    <CheckBox
-        android:id="@+id/use"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/govt"
-        android:layout_marginStart="40dp"
-        android:text="User"
-        tools:ignore="RtlCompat,UnknownId" />
-
-    <CheckBox
-        android:id="@+id/lawyer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/submit"
-        android:layout_centerHorizontal="true"
-        android:text="Lawyer"
-        tools:ignore="RtlCompat,UnknownId" />
-
-    <CheckBox
-        android:id="@+id/govt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/lawyer"
-        android:layout_marginBottom="96dp"
-        android:text="Govt.org"
-        tools:ignore="RtlCompat" />
-
-    <CheckBox
-        android:id="@+id/ngo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/use"
-        android:layout_alignTop="@+id/lawyer"
-        android:text="NGO"
-        tools:ignore="RtlCompat,UnknownId" />
 
     <Button
         android:id="@+id/submit"
@@ -191,4 +152,53 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="11dp"
         tools:ignore="RtlCompat" />
+
+    <RadioGroup
+        android:id="@+id/radioid"
+        android:layout_width="132dp"
+        android:layout_height="165dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp">
+
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lawyer"
+            android:textSize="18sp"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NGO"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Govt Org"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+
+
 </RelativeLayout>

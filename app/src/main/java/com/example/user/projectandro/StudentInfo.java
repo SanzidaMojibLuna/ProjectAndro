@@ -3,14 +3,15 @@ package com.example.user.projectandro;
 
 public class StudentInfo {
 
-    String fname, lname,femail,fpass,fphn;
+    String fname, lname,femail,fpass,fphn,type;
 
-    public StudentInfo(String fname, String lname, String femail, String fpass, String fphn) {
+    public StudentInfo(String fname, String lname, String femail, String fpass, String fphn, String type) {
         this.fname = fname;
         this.lname = lname;
         this.femail = femail;
         this.fpass = fpass;
         this.fphn = fphn;
+        this.type=type;
     }
 
     public String getFname() {
@@ -37,8 +38,17 @@ public class StudentInfo {
         this.femail = femail;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public String getFpass() {
         return fpass;
+
     }
 
     public void setFpass(String fpass) {
