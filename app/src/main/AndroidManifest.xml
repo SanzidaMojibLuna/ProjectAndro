@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".second" />
         <activity android:name=".third"></activity>
+
     </application>
 
 </manifest>
