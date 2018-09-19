@@ -22,6 +22,11 @@
             android:name=".UserServices"
             android:label="@string/title_activity_user_services"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".NGO_activity"
+            android:label="@string/title_activity_ngo_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
 
 
     </application>
