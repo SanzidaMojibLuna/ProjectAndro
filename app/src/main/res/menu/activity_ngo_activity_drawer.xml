@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_appoints_requests"
+            android:icon="@drawable/ic_appoint"
+            android:title="Appoints Requests" />
+        <item
+            android:id="@+id/nav_consult"
+            android:icon="@drawable/ic_consult"
+            android:title="Consult" />
+        <item
+            android:id="@+id/nav_approval"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Approval" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    </group>
+
+
+
+</menu>
