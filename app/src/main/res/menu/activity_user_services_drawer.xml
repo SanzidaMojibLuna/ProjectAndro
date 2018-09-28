@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_lawyer_help"
+            android:icon="@drawable/ic_live_help"
+            android:title="Lawyer Help" />
+        <item
+            android:id="@+id/nav_ngo_help"
+            android:icon="@drawable/ic_help"
+            android:title="NGO Help" />
+        <item
+            android:id="@+id/nav_govt_org_help"
+            android:icon="@drawable/ic_help_outline"
+            android:title="Govt Org Help" />
+        <item
+        android:id="@+id/nav_file_case"
+        android:icon="@drawable/ic_content_copy"
+        android:title="File Case" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    </group>
+
+
+
+</menu>
