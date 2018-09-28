@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".second" />
-        <activity android:name=".third"></activity>
+        <activity android:name=".third" />
+        <activity android:name=".User" />
+        <activity android:name=".Lawyer" />
+        <activity android:name=".Govt" />
+        <activity android:name=".NGO"></activity>
     </application>
 
 </manifest>
