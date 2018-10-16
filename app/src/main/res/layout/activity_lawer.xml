@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:layout_height="match_parent"
+    tools:context=".lawer">
+    <Button
+        android:id="@+id/lawyers"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="85dp"
+        android:text="LAWYERS"
+        android:background="#c6c6dd"
+        android:textSize="40dp"/>
+</LinearLayout>
